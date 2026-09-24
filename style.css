@@ -1,0 +1,364 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@400;500;600;700&family=Indie+Flower&family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Quicksand:wght@500;600;700&family=VT323&display=swap');
+
+:root {
+  --color-pink-primary: #ffb7c5;
+  --color-pink-soft: #ffe4e9;
+  --color-pink-deep: #db2777;
+  --color-pink-dark: #831843;
+  --color-cream: #fffaf0;
+  --color-cream-paper: #fef7ee;
+  --color-lavender: #f3e8ff;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Fredoka', 'Quicksand', sans-serif;
+  background-color: #ffd6df;
+  color: #4a1525;
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+/* Custom Heart Cursor for Desktop */
+@media (min-width: 768px) {
+  body {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23ff4d79' stroke='%23ffffff' stroke-width='1.5'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>") 12 12, auto;
+  }
+  
+  a, button, input, .cursor-pointer, [role="button"] {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24' fill='%23ff1464' stroke='%23ffffff' stroke-width='2'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>") 14 14, pointer !important;
+  }
+}
+
+/* Gingham Pink Checkered Background */
+.bg-gingham {
+  background-color: #ffdce5;
+  background-image: 
+    linear-gradient(90deg, rgba(255, 175, 195, 0.45) 50%, transparent 50%),
+    linear-gradient(rgba(255, 175, 195, 0.45) 50%, transparent 50%);
+  background-size: 32px 32px;
+}
+
+.bg-gingham-dense {
+  background-color: #ffe6ed;
+  background-image: 
+    linear-gradient(90deg, rgba(255, 185, 205, 0.4) 50%, transparent 50%),
+    linear-gradient(rgba(255, 185, 205, 0.4) 50%, transparent 50%);
+  background-size: 20px 20px;
+}
+
+/* Paper Textures & Scrapbook styling */
+.paper-crumpled {
+  background-image: url('aseet no bg/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.paper-kraft {
+  background-image: url('aseet no bg/background_kertas.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Washi Tape styling */
+.washi-tape {
+  position: absolute;
+  height: 28px;
+  width: 90px;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 6px, rgba(255, 175, 195, 0.45) 6px, rgba(255, 175, 195, 0.45) 12px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+  z-index: 20;
+  backdrop-filter: blur(1px);
+}
+
+.washi-tape-pink {
+  position: absolute;
+  height: 26px;
+  width: 85px;
+  background: rgba(255, 182, 193, 0.85);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 20;
+  transform: rotate(-3deg);
+}
+
+/* Polaroid Card */
+.polaroid-card {
+  background: #ffffff;
+  padding: 10px 10px 30px 10px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+}
+
+.polaroid-card:hover {
+  transform: translateY(-6px) rotate(1deg) scale(1.03);
+  box-shadow: 0 20px 30px -10px rgba(219, 39, 119, 0.28);
+  z-index: 30;
+}
+
+/* Photostrip Styling */
+.photostrip-container {
+  background: #ffffff;
+  padding: 12px 10px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  border-radius: 6px;
+  position: relative;
+}
+
+/* Realistic Envelope 3D Interactive Design */
+.envelope-box {
+  position: relative;
+  background: #ffb8ca;
+  border-radius: 18px;
+  box-shadow: 0 14px 28px rgba(219, 39, 119, 0.18), 0 10px 10px rgba(0,0,0,0.06);
+  cursor: pointer;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+  overflow: visible;
+  border: 3px solid #ff9db4;
+}
+
+.envelope-box:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 22px 36px rgba(219, 39, 119, 0.3);
+}
+
+.envelope-flap-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  background: linear-gradient(180deg, #ff94af, #ff82a1);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: top;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 20;
+  box-shadow: 0 4px 10px rgba(131, 24, 67, 0.15);
+}
+
+.envelope-box:hover .envelope-flap-top {
+  transform: rotateX(170deg);
+  z-index: 5;
+}
+
+.envelope-paper-preview {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.envelope-box:hover .envelope-paper-preview {
+  transform: translateY(-20px);
+}
+
+/* Speech Bubble Pill Button for Q&A */
+.speech-bubble-btn {
+  position: relative;
+  background: #ffffff;
+  border: 3px solid #f472b6;
+  border-radius: 9999px;
+  box-shadow: 0 6px 14px rgba(244, 114, 182, 0.2);
+  transition: all 0.25s ease;
+}
+
+.speech-bubble-btn:hover {
+  background: #fff0f5;
+  border-color: #db2777;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(219, 39, 119, 0.25);
+}
+
+.speech-bubble-btn:active {
+  transform: scale(0.96);
+}
+
+/* Fonts */
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.font-letter {
+  font-family: 'Indie Flower', cursive;
+}
+
+.font-pixel {
+  font-family: 'VT323', monospace;
+}
+
+.font-serif-vintage {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Candle flame pulse & flicker */
+@keyframes candleFlicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+    filter: drop-shadow(0 0 8px #f59e0b) drop-shadow(0 0 16px #ef4444);
+  }
+  25% {
+    transform: scale(1.1, 1.18) rotate(2deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 14px #f59e0b) drop-shadow(0 0 22px #fbbf24);
+  }
+  50% {
+    transform: scale(0.94, 0.9) rotate(-2deg);
+    opacity: 0.9;
+    filter: drop-shadow(0 0 7px #f59e0b) drop-shadow(0 0 14px #ef4444);
+  }
+  75% {
+    transform: scale(1.06, 1.1) rotate(1deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 11px #f59e0b) drop-shadow(0 0 20px #f97316);
+  }
+}
+
+.candle-flame {
+  animation: candleFlicker 1.6s infinite ease-in-out;
+  transform-origin: bottom center;
+}
+
+/* Vinyl Spin Animation */
+@keyframes spinContinuous {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-vinyl {
+  animation: spinContinuous 6s linear infinite;
+}
+
+.animate-spin-vinyl.paused {
+  animation-play-state: paused;
+}
+
+/* Audio Visualizer Bar Animation */
+@keyframes bounceBar {
+  0%, 100% { height: 6px; }
+  50% { height: 26px; }
+}
+
+.visualizer-bar {
+  width: 4px;
+  background: #db2777;
+  border-radius: 9999px;
+  display: inline-block;
+  animation: bounceBar 1.2s ease-in-out infinite alternate;
+}
+
+.visualizer-bar:nth-child(2) { animation-delay: 0.2s; height: 18px; }
+.visualizer-bar:nth-child(3) { animation-delay: 0.4s; height: 12px; }
+.visualizer-bar:nth-child(4) { animation-delay: 0.1s; height: 24px; }
+.visualizer-bar:nth-child(5) { animation-delay: 0.35s; height: 14px; }
+.visualizer-bar:nth-child(6) { animation-delay: 0.25s; height: 22px; }
+
+.visualizer-bar.paused {
+  animation-play-state: paused;
+  height: 6px !important;
+}
+
+/* Coupon Styling */
+.coupon-card {
+  position: relative;
+  background: #ffffff;
+  border: 2px dashed #f472b6;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+}
+
+.coupon-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 24px rgba(244, 114, 182, 0.25);
+}
+
+.coupon-claimed-stamp {
+  transform: rotate(-12deg);
+  border: 3px solid #e11d48;
+  color: #e11d48;
+  padding: 4px 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Tap particle hearts */
+.tap-heart {
+  position: fixed;
+  pointer-events: none;
+  font-size: 22px;
+  z-index: 9999;
+  animation: tapHeartFly 0.95s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+}
+
+@keyframes tapHeartFly {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.6) rotate(0deg);
+  }
+  50% {
+    opacity: 0.95;
+    transform: translate(calc(-50% + var(--dx, 0px)), calc(-50% - 45px)) scale(1.35) rotate(var(--rot, 15deg));
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--dx, 0px)), calc(-50% - 95px)) scale(0.7) rotate(var(--rot, 30deg));
+  }
+}
+
+/* Screen Transitions */
+.view-screen {
+  display: none;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.view-screen.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Subtle bounce for floating player */
+@keyframes bounceSubtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-bounce-subtle {
+  animation: bounceSubtle 3s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fce7f3;
+}
+::-webkit-scrollbar-thumb {
+  background: #f472b6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #db2777;
+}

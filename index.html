@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Happy Birthday Niken Ayu Nazila Suharto ❤️</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pink: {
+              50: '#fff0f3',
+              100: '#ffe4e9',
+              200: '#ffd1dc',
+              300: '#ffb7c5',
+              400: '#ff8da1',
+              500: '#ff5c8d',
+              600: '#db2777',
+              700: '#be185d',
+              800: '#9d174d',
+              900: '#831843',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gingham min-h-screen text-[#4a1525] relative selection:bg-pink-300 selection:text-pink-900 pb-20">
+
+  <!-- Ambient Floating Canvas Background -->
+  <canvas id="bg-canvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+
+  <!-- Background Music Audio Element -->
+  <audio id="bg-music" src="Sempurna - Andra and the backbone.mp3" preload="auto"></audio>
+
+  <!-- Decorative Top Scalloped Header Bar -->
+  <div class="w-full h-4 bg-repeat-x opacity-80 pointer-events-none z-10" style="background-image: radial-gradient(circle at 10px 0, transparent 8px, #fff5f8 9px); background-size: 20px 14px;"></div>
+
+  <!-- Main Container -->
+  <main class="relative z-10 max-w-5xl mx-auto px-3 sm:px-6 py-4 sm:py-8 min-h-[90vh] flex flex-col justify-center">
+
+    <!-- ==========================================
+         SCREEN 0: COVER / WELCOME SCRAPBOOK
+    =========================================== -->
+    <section id="screen-cover" class="view-screen active">
+      <div class="relative bg-white/90 backdrop-blur-sm rounded-3xl p-5 sm:p-10 shadow-2xl border-4 border-pink-200 overflow-hidden max-w-3xl mx-auto">
+        <!-- Washi Tape Accents -->
+        <div class="washi-tape -top-3 left-8 rotate-[-6deg]"></div>
+        <div class="washi-tape -top-3 right-8 rotate-[5deg]"></div>
+
+        <!-- Scrapbook Corner Ribbons -->
+        <img src="aseet no bg/pita-removebg-preview.png" alt="Ribbon" class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 sm:w-20 z-20 pointer-events-none drop-shadow">
+        
+        <div class="text-center pt-6 sm:pt-8 pb-4">
+          <div class="inline-block bg-pink-100 border border-pink-300 px-4 py-1 rounded-full text-xs sm:text-sm font-semibold tracking-widest text-pink-700 uppercase mb-3 shadow-sm">
+            ✨ Special Birthday Scrapbook ✨
+          </div>
+          <h1 class="text-3xl sm:text-5xl md:text-6xl font-serif-vintage font-extrabold text-pink-600 tracking-tight drop-shadow-sm mb-2">
+            HAPPY BIRTHDAY
+          </h1>
+          <h2 class="text-xl sm:text-3xl font-handwriting font-bold text-pink-800 tracking-wide mb-6">
+            Niken Ayu Nazila Suharto ❤️
+          </h2>
+        </div>
+
+        <!-- Photo Showcase Collage on Cover -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 my-6 items-center justify-center">
+          <div class="polaroid-card rotate-[-4deg] mx-auto max-w-[170px] sm:max-w-[200px]">
+            <img src="aseet/IMG-20260412-WA0015.jpg" alt="Senyum Manis Niken" class="w-full h-36 sm:h-44 object-cover rounded cursor-pointer zoomable-photo">
+            <p class="text-center text-xs font-handwriting text-pink-700 mt-2 font-bold">Senyum Manis Niken ✨</p>
+          </div>
+
+          <div class="hidden sm:block polaroid-card rotate-[2deg] mx-auto max-w-[200px]">
+            <img src="aseet/IMG_20260307_110528.jpg" alt="Hari Spesial Niken" class="w-full h-44 object-cover rounded cursor-pointer zoomable-photo">
+            <p class="text-center text-xs font-handwriting text-pink-700 mt-2 font-bold">Hari Bahagiamu 🎂</p>
+          </div>
+
+          <div class="polaroid-card rotate-[5deg] mx-auto max-w-[170px] sm:max-w-[200px]">
+            <img src="aseet/IMG-20260721-WA0147.jpg" alt="Cantiknya Niken" class="w-full h-36 sm:h-44 object-cover rounded cursor-pointer zoomable-photo">
+            <p class="text-center text-xs font-handwriting text-pink-700 mt-2 font-bold">Bidadariku 💕</p>
+          </div>
+        </div>
+
+        <!-- Retro Calendar & Stamp Badges -->
+        <div class="flex items-center justify-center gap-4 my-4">
+          <div class="bg-pink-50 border-2 border-pink-300 rounded-xl p-2.5 text-center shadow-sm">
+            <span class="block text-[10px] tracking-wider text-pink-500 font-bold uppercase">Special Day</span>
+            <span class="text-xl sm:text-2xl font-black text-pink-600 leading-none">FOR YOU</span>
+          </div>
+          <img src="aseet no bg/perangko-removebg-preview.png" alt="Stamp" class="w-12 sm:w-16 drop-shadow rotate-12 pointer-events-none">
+          <img src="aseet no bg/stikerhati-removebg-preview.png" alt="Heart" class="w-10 sm:w-14 drop-shadow -rotate-6 pointer-events-none">
+        </div>
+
+        <p class="text-center text-sm sm:text-base text-pink-900/80 max-w-md mx-auto mb-6 px-2">
+          Sebuah website kenangan dan kado kecil yang dibuat khusus dari hati terdalam untuk menemani hari bahagiamu, Niken.
+        </p>
+
+        <!-- Start CTA -->
+        <div class="text-center pb-3">
+          <button data-goto="q1" class="group relative inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-rose-400 text-white font-bold text-base sm:text-lg px-8 py-3.5 rounded-full shadow-lg shadow-pink-300 hover:shadow-pink-400 hover:scale-105 active:scale-95 transition-all">
+            <span>Mulai Perjalanan Kita</span>
+            <span class="group-hover:translate-x-1 transition-transform">✨</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SCREEN 1: Q&A - PERTANYAAN 1
+    =========================================== -->
+    <section id="screen-q1" class="view-screen">
+      <div class="relative bg-white/95 rounded-3xl p-6 sm:p-10 shadow-2xl border-4 border-pink-300 max-w-xl mx-auto overflow-hidden">
+        <div class="washi-tape-pink -top-2 left-10"></div>
+        <div class="washi-tape-pink -top-2 right-10 rotate-[4deg]"></div>
+
+        <div class="text-center mb-6 pt-4">
+          <div class="inline-block bg-pink-100 text-pink-600 font-bold text-xs tracking-wider px-3 py-1 rounded-full uppercase mb-2">
+            Pertanyaan 1 dari 4
+          </div>
+          <div class="bg-pink-500 text-white text-xs sm:text-sm font-bold tracking-widest py-1.5 px-5 rounded-full shadow inline-block mb-3">
+            ARE YOU EXPECTING SOMETHING LIKE THIS BABE?
+          </div>
+          <h3 class="text-lg sm:text-2xl font-semibold text-pink-900 leading-snug mt-3">
+            "Kira-kira... kamu udah nebak belum kalau bakal dapet sesuatu kayak gini hari ini?"
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+          <button class="qa-choice-btn speech-bubble-btn py-4 px-5 text-center text-pink-800 font-bold text-sm sm:text-base group" data-next="q2">
+            <span class="block text-xl mb-1 group-hover:scale-125 transition-transform">❤️</span>
+            <span>Udah dong, aku kan peka!</span>
+          </button>
+          <button class="qa-choice-btn speech-bubble-btn py-4 px-5 text-center text-pink-800 font-bold text-sm sm:text-base group" data-next="q2">
+            <span class="block text-xl mb-1 group-hover:scale-125 transition-transform">🙈</span>
+            <span>Sama sekali gak kepikiran!</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SCREEN 2: Q&A - PERTANYAAN 2
+    =========================================== -->
+    <section id="screen-q2" class="view-screen">
+      <div class="relative bg-white/95 rounded-3xl p-6 sm:p-10 shadow-2xl border-4 border-pink-300 max-w-xl mx-auto overflow-hidden">
+        <div class="washi-tape-pink -top-2 left-10"></div>
+        <div class="washi-tape-pink -top-2 right-10 rotate-[4deg]"></div>
+
+        <div class="text-center mb-6 pt-4">
+          <div class="inline-block bg-pink-100 text-pink-600 font-bold text-xs tracking-wider px-3 py-1 rounded-full uppercase mb-2">
+            Pertanyaan 2 dari 4
+          </div>
+          <div class="bg-pink-500 text-white text-xs sm:text-sm font-bold tracking-widest py-1.5 px-5 rounded-full shadow inline-block mb-3">
+            SO RIGHT NOW, I'M GOOD AT SURPRISES?
+          </div>
+          <h3 class="text-lg sm:text-2xl font-semibold text-pink-900 leading-snug mt-3">
+            "Berarti rahasia aku berhasil dong? Aku pinter kan bikin kejutan manis?"
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+          <button class="qa-choice-btn speech-bubble-btn py-4 px-5 text-center text-pink-800 font-bold text-sm sm:text-base group" data-next="q3">
+            <span class="block text-xl mb-1 group-hover:scale-125 transition-transform">💐</span>
+            <span>Pinter banget!</span>
+          </button>
+          <button class="qa-choice-btn speech-bubble-btn py-4 px-5 text-center text-pink-800 font-bold text-sm sm:text-base group" data-next="q3">
+            <span class="block text-xl mb-1 group-hover:scale-125 transition-transform">🥰</span>
+            <span>Lumayan lah, bikin gemes...</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SCREEN 3: Q&A - PERTANYAAN 3
+    =========================================== -->
+    <section id="screen-q3" class="view-screen">
+      <div class="relative bg-white/95 rounded-3xl p-6 sm:p-10 shadow-2xl border-4 border-pink-300 max-w-xl mx-auto overflow-hidden">
+        <div class="washi-tape-pink -top-2 left-10"></div>
+        <div class="washi-tape-pink -top-2 right-10 rotate-[4deg]"></div>
+
+        <div class="text-center mb-6 pt-4">
+          <div class="inline-block bg-pink-100 text-pink-600 font-bold text-xs tracking-wider px-3 py-1 rounded-full uppercase mb-2">
+            Pertanyaan 3 dari 4
+          </div>
+          <div class="bg-pink-500 text-white text-xs sm:text-sm font-bold tracking-widest py-1.5 px-5 rounded-full shadow inline-block mb-3">
+            HOW MANY PERCENT?
+          </div>
+          <h3 class="text-lg sm:text-2xl font-semibold text-pink-900 leading-snug mt-3">
+            "Seberapa seneng kamu pas buka web kecil ini sekarang?"
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+          <button class="qa-choice-btn speech-bubble-btn py-4 px-5 text-center text-pink-800 font-bold text-sm sm:text-base group" data-next="q4">
+            <span class="block text-xl mb-1 group-hover:scale-125 transition-transform">💖</span>
+            <span>100% Seneng Banget!</span>
+          </button>
+          <button class="qa-choice-btn speech-bubble-btn py-4 px-5 text-center text-pink-800 font-bold text-sm sm:text-base group" data-next="q4">
+            <span class="block text-xl mb-1 group-hover:scale-125 transition-transform">✨</span>
+            <span>Infinity% Paling Seneng!</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SCREEN 4: Q&A - PERTANYAAN 4 (FINAL)
+    =========================================== -->
+    <section id="screen-q4" class="view-screen">
+      <div class="relative bg-white/95 rounded-3xl p-6 sm:p-10 shadow-2xl border-4 border-pink-300 max-w-xl mx-auto overflow-hidden">
+        <div class="washi-tape-pink -top-2 left-10"></div>
+        <div class="washi-tape-pink -top-2 right-10 rotate-[4deg]"></div>
+
+        <div class="text-center mb-6 pt-4">
+          <div class="inline-block bg-pink-100 text-pink-600 font-bold text-xs tracking-wider px-3 py-1 rounded-full uppercase mb-2">
+            Langkah Terakhir!
+          </div>
+          <div class="bg-pink-500 text-white text-xs sm:text-sm font-bold tracking-widest py-1.5 px-5 rounded-full shadow inline-block mb-3">
+            OKAY, LET'S START !
+          </div>
+          <h3 class="text-lg sm:text-2xl font-semibold text-pink-900 leading-snug mt-3">
+            "Oke, siap-siap ya... Kalo gitu, siap buat lihat hadiah utama kamu, Niken?"
+          </h3>
+        </div>
+
+        <div class="mt-8 text-center">
+          <button data-goto="cupcake" class="w-full bg-gradient-to-r from-pink-500 to-rose-400 hover:from-pink-600 hover:to-rose-500 text-white font-extrabold py-4 px-6 rounded-2xl shadow-xl hover:shadow-pink-300 hover:scale-105 active:scale-95 transition-all text-base sm:text-lg tracking-wider flex items-center justify-center gap-3">
+            <span>BUKA SEKARANG (OPEN)</span>
+            <span>✨</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SCREEN 5: CUPCAKE GATEWAY
+    =========================================== -->
+    <section id="screen-cupcake" class="view-screen">
+      <div class="relative bg-white/90 backdrop-blur-md rounded-3xl p-6 sm:p-10 shadow-2xl border-4 border-pink-300 max-w-3xl mx-auto overflow-hidden">
+        <div class="washi-tape -top-3 left-12 rotate-[-4deg]"></div>
+        <div class="washi-tape -top-3 right-12 rotate-[3deg]"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <!-- Film Photostrip (Desktop) -->
+          <div class="md:col-span-4 flex justify-center">
+            <div class="photostrip-container rotate-[-3deg] max-w-[210px] w-full">
+              <div class="text-center font-handwriting text-pink-600 text-xs font-bold mb-1.5 tracking-wider">MEMORIES WITH YOU</div>
+              <div class="flex flex-col gap-2">
+                <img src="aseet/IMG-20260718-WA0054.jpg" alt="Memory Niken 1" class="w-full h-24 object-cover rounded cursor-pointer zoomable-photo">
+                <img src="aseet/IMG_20260514_155933.jpg" alt="Memory Niken 2" class="w-full h-24 object-cover rounded cursor-pointer zoomable-photo">
+                <img src="aseet/IMG-20260915-WA0041.jpg" alt="Memory Niken 3" class="w-full h-24 object-cover rounded cursor-pointer zoomable-photo">
+              </div>
+              <div class="text-center font-handwriting text-pink-500 text-[11px] mt-2">Niken Ayu Nazila ❤️</div>
+            </div>
+          </div>
+
+          <!-- Cupcake Blow Area -->
+          <div class="md:col-span-8 text-center flex flex-col items-center">
+            <div class="inline-block bg-pink-100 text-pink-600 font-bold text-xs tracking-wider px-4 py-1 rounded-full uppercase mb-2">
+              🎉 Tiup Lilin Virtual 🎉
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-serif-vintage font-extrabold text-pink-600 mb-1">
+              Happy Birthday My Love
+            </h2>
+            <p class="text-sm sm:text-base font-handwriting text-pink-700 font-semibold mb-6">
+              "a surprise awaits, tap the cupcake!"
+            </p>
+
+            <!-- Interactive Cupcake Graphic -->
+            <div id="cupcake-trigger" class="relative cursor-pointer group hover:scale-105 active:scale-95 transition-transform duration-300 p-4">
+              <!-- Animated Candle Flame Glow -->
+              <div id="candle-flame" class="candle-flame absolute left-[49%] -translate-x-1/2 top-4 w-7 h-9 rounded-full bg-gradient-to-t from-orange-500 via-amber-300 to-yellow-100 z-20 pointer-events-none shadow-lg"></div>
+
+              <!-- Cupcake Image -->
+              <img src="aseet no bg/kue-removebg-preview.png" alt="Birthday Cupcake" class="w-48 sm:w-56 h-auto drop-shadow-2xl mx-auto">
+              
+              <!-- Tap Me Pulse Indicator -->
+              <div class="mt-4 inline-flex items-center gap-2 bg-pink-500 text-white font-bold text-xs sm:text-sm px-4 py-1.5 rounded-full shadow-md animate-pulse">
+                <span>👆 Ketuk kuenya buat tiup lilin!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SCREEN 6: MAIN HUB - 3 ENVELOPES
+    =========================================== -->
+    <section id="screen-hub" class="view-screen">
+      <div class="relative bg-white/85 backdrop-blur-md rounded-3xl p-5 sm:p-8 shadow-2xl border-4 border-pink-300 max-w-5xl mx-auto overflow-hidden paper-crumpled">
+        
+        <!-- Draped Floral Lace Top Border -->
+        <div class="flex justify-center items-center pointer-events-none -mt-4 mb-4">
+          <img src="aseet no bg/border-removebg-preview.png" alt="Curtain Header" class="max-h-24 sm:max-h-32 object-contain drop-shadow-md">
+        </div>
+
+        <div class="relative text-center mb-8">
+          <div class="inline-block bg-white/95 border-2 border-pink-400 text-pink-700 font-extrabold text-sm sm:text-lg px-8 py-2 rounded-full shadow-md tracking-wider">
+            CLICK ANY CARDS FOR YOU ! 💌
+          </div>
+          <p class="text-xs sm:text-sm text-pink-900 font-bold mt-2">Pilih salah satu amplop kejutan untuk melihat isinya</p>
+        </div>
+
+        <!-- 3 Interactive Envelopes with Realistic Flaps -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto px-2">
+
+          <!-- ENVELOPE 1: Personal Letter -->
+          <div class="hub-envelope-card envelope-box p-4 pt-16 flex flex-col justify-between min-h-[220px] group" data-dest="letter">
+            <div class="envelope-flap-top"></div>
+            <img src="aseet no bg/pita-removebg-preview.png" alt="Bow" class="absolute top-10 left-1/2 -translate-x-1/2 w-12 z-30 drop-shadow pointer-events-none">
+
+            <div class="envelope-paper-preview bg-white rounded-xl p-3 shadow-md border border-pink-200 text-center z-10">
+              <span class="text-2xl block mb-1">💌</span>
+              <h3 class="font-serif-vintage font-bold text-pink-700 text-sm sm:text-base leading-tight">
+                MY PERSONAL LETTER FOR YOU
+              </h3>
+              <p class="text-[11px] text-pink-500 font-medium mt-1">Surat ungkapan hati</p>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-pink-900 font-bold px-1 z-10">
+              <span>Untuk Niken</span>
+              <span class="group-hover:translate-x-1 transition-transform">Buka →</span>
+            </div>
+          </div>
+
+          <!-- ENVELOPE 2: Memory Coupons & Photostrip -->
+          <div class="hub-envelope-card envelope-box p-4 pt-16 flex flex-col justify-between min-h-[220px] group" data-dest="coupons">
+            <div class="envelope-flap-top"></div>
+            <img src="aseet no bg/stikerhati-removebg-preview.png" alt="Heart Seal" class="absolute top-10 left-1/2 -translate-x-1/2 w-10 z-30 drop-shadow pointer-events-none">
+
+            <div class="envelope-paper-preview bg-white rounded-xl p-3 shadow-md border border-pink-200 text-center z-10">
+              <span class="text-2xl block mb-1">🎟️</span>
+              <h3 class="font-serif-vintage font-bold text-pink-700 text-sm sm:text-base leading-tight">
+                MEMORY COUPONS
+              </h3>
+              <p class="text-[11px] text-pink-500 font-medium mt-1">Kupon & Galeri Foto</p>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-pink-900 font-bold px-1 z-10">
+              <span>3 Hadiah Spesial</span>
+              <span class="group-hover:translate-x-1 transition-transform">Buka →</span>
+            </div>
+          </div>
+
+          <!-- ENVELOPE 3: Dedicated Playlist -->
+          <div class="hub-envelope-card envelope-box p-4 pt-16 flex flex-col justify-between min-h-[220px] group" data-dest="music">
+            <div class="envelope-flap-top"></div>
+            <img src="aseet no bg/piringanhitam-removebg-preview.png" alt="Vinyl" class="absolute top-10 left-1/2 -translate-x-1/2 w-10 z-30 drop-shadow animate-spin-vinyl pointer-events-none">
+
+            <div class="envelope-paper-preview bg-white rounded-xl p-3 shadow-md border border-pink-200 text-center z-10">
+              <span class="text-2xl block mb-1">🎶</span>
+              <h3 class="font-serif-vintage font-bold text-pink-700 text-sm sm:text-base leading-tight">
+                A SONG & PLAYLIST FOR YOU
+              </h3>
+              <p class="text-[11px] text-pink-500 font-medium mt-1">Lagu "Sempurna"</p>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-pink-900 font-bold px-1 z-10">
+              <span>Putar Musik</span>
+              <span class="group-hover:translate-x-1 transition-transform">Dengarkan →</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MODULE 1: PERSONAL LETTER
+    =========================================== -->
+    <section id="screen-letter" class="view-screen">
+      <!-- Back Navigation Header -->
+      <div class="flex items-center justify-between mb-4 max-w-4xl mx-auto">
+        <button data-goto="hub" class="inline-flex items-center gap-2 bg-white/95 hover:bg-white border-2 border-pink-400 text-pink-700 font-bold px-5 py-2 rounded-full shadow text-xs sm:text-sm active:scale-95 transition-all">
+          <span>←</span>
+          <span>BACK</span>
+        </button>
+        <span class="font-handwriting text-pink-800 font-bold text-base sm:text-xl">Surat Spesial Untuk Niken ✨</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 max-w-4xl mx-auto items-start">
+        
+        <!-- Left: The Romantic Letter Paper -->
+        <div class="lg:col-span-8 relative bg-white/95 rounded-3xl p-6 sm:p-10 shadow-2xl border-4 border-pink-200 paper-kraft">
+          <div class="washi-tape -top-3 left-10 rotate-[-3deg]"></div>
+          <img src="aseet no bg/pita-removebg-preview.png" alt="Ribbon" class="absolute -top-3 right-8 w-16 drop-shadow pointer-events-none">
+
+          <div class="border-b-2 border-dashed border-pink-300 pb-4 mb-6">
+            <span class="text-xs font-semibold text-pink-600 tracking-wider uppercase block">Surat Cinta Ulang Tahun</span>
+            <h2 class="text-2xl sm:text-3xl font-serif-vintage font-bold text-pink-700 mt-1">
+              Untuk Niken Ayu Nazila Suharto ❤️
+            </h2>
+          </div>
+
+          <!-- Letter Body Copy from PRD -->
+          <div class="font-handwriting text-lg sm:text-xl md:text-2xl text-pink-950 leading-relaxed space-y-4">
+            <p>
+              Selamat ulang tahun ya, Niken...
+            </p>
+            <p>
+              Di hari yang spesial ini, aku cuma mau bilang terima kasih banyak udah lahir dan tumbuh jadi sosok yang begitu indah, manis, dan selalu bawa kehangatan di setiap hariku. Makasih udah selalu sabar, nemenin, dan ngisi hari-hariku dengan tawa kamu yang selalu berhasil bikin aku jatuh cinta lagi dan lagi.
+            </p>
+            <p>
+              Aku selalu berdoa semoga di usiamu yang baru ini, kamu senantiasa diberi kebahagiaan yang melimpah, kesehatan, dan kemudahan dalam mengejar semua impian kamu. Semoga dunia selalu ramah sama kamu, seramah kamu yang selalu hadir buat aku. Kalaupun nanti ada hari-hari berat yang harus dilewati, ingat ya, kamu gak pernah sendiri. Aku bakal selalu ada di sini, genggam tangan kamu, dan dukung kamu kapan pun kamu butuh.
+            </p>
+            <p>
+              Terima kasih ya sudah jadi tempat pulang terbaik. Selamat ulang tahun, sayangnya aku. I love you so much, today and always. ✨
+            </p>
+          </div>
+
+          <!-- Virtual Hug Interaction -->
+          <div class="mt-8 pt-6 border-t-2 border-dashed border-pink-300 flex flex-wrap items-center justify-between gap-4">
+            <div class="text-xs sm:text-sm text-pink-800 font-semibold">
+              Pelukan virtual terkirim: <span id="hug-count" class="font-bold text-pink-600 text-base">99</span> kali 💕
+            </div>
+            <button id="send-hug-btn" class="bg-gradient-to-r from-pink-500 to-rose-400 hover:from-pink-600 hover:to-rose-500 text-white font-bold px-5 py-2.5 rounded-full shadow-md hover:scale-105 active:scale-95 transition-all text-xs sm:text-sm flex items-center gap-2">
+              <span>🤗 Beri Pelukan Virtual</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Polaroid & Stamp Collage -->
+        <div class="lg:col-span-4 flex flex-col gap-5 items-center">
+          <div class="polaroid-card rotate-[3deg] max-w-[240px] w-full">
+            <img src="aseet no bg/paperclip-removebg-preview.png" alt="Clip" class="absolute -top-4 right-4 w-9 drop-shadow z-20 pointer-events-none">
+            <img src="aseet/IMG_20241118_144504.jpg" alt="Foto Kenangan Niken" class="w-full h-56 object-cover rounded cursor-pointer zoomable-photo">
+            <p class="text-center font-handwriting text-pink-700 font-bold mt-2 text-sm">Bidadari Cantikku 🌸</p>
+          </div>
+
+          <div class="polaroid-card rotate-[-2deg] max-w-[240px] w-full">
+            <div class="washi-tape-pink -top-2 left-6"></div>
+            <img src="aseet/IMG-20260721-WA0147.jpg" alt="Momen Manis Niken" class="w-full h-52 object-cover rounded cursor-pointer zoomable-photo">
+            <p class="text-center font-handwriting text-pink-700 font-bold mt-2 text-sm">Selalu Bersamamu ✨</p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <img src="aseet no bg/perangko-removebg-preview.png" alt="Stamp" class="w-14 drop-shadow rotate-6">
+            <img src="aseet no bg/stikerhati-removebg-preview.png" alt="Heart" class="w-12 drop-shadow -rotate-6">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MODULE 2: MEMORY COUPONS & PHOTO GALLERY
+    =========================================== -->
+    <section id="screen-coupons" class="view-screen">
+      <!-- Navigation Header -->
+      <div class="flex items-center justify-between mb-4 max-w-5xl mx-auto">
+        <button data-goto="hub" class="inline-flex items-center gap-2 bg-white/95 hover:bg-white border-2 border-pink-400 text-pink-700 font-bold px-5 py-2 rounded-full shadow text-xs sm:text-sm active:scale-95 transition-all">
+          <span>←</span>
+          <span>BACK</span>
+        </button>
+        <div class="bg-pink-500 text-white font-bold text-xs sm:text-sm px-4 py-1.5 rounded-full shadow">
+          MEMORY COUPONS & PHOTOSTRIP
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-5xl mx-auto items-start">
+        
+        <!-- Left: The 3 Special Coupons -->
+        <div class="lg:col-span-6 flex flex-col gap-5">
+          <div class="bg-white/85 rounded-2xl p-4 border-2 border-pink-300 shadow-sm text-center">
+            <h3 class="font-serif-vintage font-bold text-pink-800 text-xl">Kupon Hadiah Spesial</h3>
+            <p class="text-xs text-pink-600 mt-0.5">Khusus buat Niken, klik klaim untuk menggunakan kuponnya kapan saja!</p>
+          </div>
+
+          <!-- Coupon 1 -->
+          <div class="coupon-card p-5 relative overflow-hidden bg-white/95">
+            <div id="stamp-coupon1" class="hidden absolute top-4 right-4 z-20">
+              <span class="coupon-claimed-stamp">TERKLAIM ❤️</span>
+            </div>
+            <div class="flex items-center gap-2 text-pink-500 font-bold text-xs uppercase tracking-wider mb-1">
+              <span>🎟️ Kupon #01</span>
+              <span>•</span>
+              <span>Berlaku Selamanya</span>
+            </div>
+            <h4 class="text-lg font-bold text-pink-700 font-serif-vintage mb-1">
+              Kupon Date Bebas Pilih
+            </h4>
+            <p class="text-xs sm:text-sm text-pink-900/80 mb-4 leading-relaxed">
+              "Bebas tentuin mau jalan-jalan ke mana & makan apa aja hari ini, aku yang turutin!"
+            </p>
+            <button class="claim-coupon-btn bg-pink-500 hover:bg-pink-600 active:scale-95 text-white font-bold text-xs px-4 py-2 rounded-xl transition-all shadow-sm" data-coupon-id="coupon1" data-coupon-title="Kupon Date Bebas Pilih">
+              Klaim Kupon Ini ❤️
+            </button>
+          </div>
+
+          <!-- Coupon 2 -->
+          <div class="coupon-card p-5 relative overflow-hidden bg-white/95">
+            <div id="stamp-coupon2" class="hidden absolute top-4 right-4 z-20">
+              <span class="coupon-claimed-stamp">TERKLAIM ❤️</span>
+            </div>
+            <div class="flex items-center gap-2 text-pink-500 font-bold text-xs uppercase tracking-wider mb-1">
+              <span>🎟️ Kupon #02</span>
+              <span>•</span>
+              <span>Berlaku Selamanya</span>
+            </div>
+            <h4 class="text-lg font-bold text-pink-700 font-serif-vintage mb-1">
+              Kupon Peluk & Manja 24/7
+            </h4>
+            <p class="text-xs sm:text-sm text-pink-900/80 mb-4 leading-relaxed">
+              "Bisa diklaim kapan aja pas lagi capek, kangen, atau butuh pelukan hangat."
+            </p>
+            <button class="claim-coupon-btn bg-pink-500 hover:bg-pink-600 active:scale-95 text-white font-bold text-xs px-4 py-2 rounded-xl transition-all shadow-sm" data-coupon-id="coupon2" data-coupon-title="Kupon Peluk & Manja 24/7">
+              Klaim Kupon Ini ❤️
+            </button>
+          </div>
+
+          <!-- Coupon 3 -->
+          <div class="coupon-card p-5 relative overflow-hidden bg-white/95">
+            <div id="stamp-coupon3" class="hidden absolute top-4 right-4 z-20">
+              <span class="coupon-claimed-stamp">TERKLAIM ❤️</span>
+            </div>
+            <div class="flex items-center gap-2 text-pink-500 font-bold text-xs uppercase tracking-wider mb-1">
+              <span>🎟️ Kupon #03</span>
+              <span>•</span>
+              <span>Permintaan Khusus</span>
+            </div>
+            <h4 class="text-lg font-bold text-pink-700 font-serif-vintage mb-1">
+              Kupon "Gak Boleh Ditolak"
+            </h4>
+            <p class="text-xs sm:text-sm text-pink-900/80 mb-4 leading-relaxed">
+              "Satu permintaan bebas khusus Niken yang wajib diturutin tanpa tapi!"
+            </p>
+            <button class="claim-coupon-btn bg-pink-500 hover:bg-pink-600 active:scale-95 text-white font-bold text-xs px-4 py-2 rounded-xl transition-all shadow-sm" data-coupon-id="coupon3" data-coupon-title="Kupon 'Gak Boleh Ditolak'">
+              Klaim Kupon Ini ❤️
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Photo Scrapbook & Photostrip Collage -->
+        <div class="lg:col-span-6 flex flex-col gap-6">
+          
+          <!-- Camera Frame Feature -->
+          <div class="relative bg-white/90 p-4 rounded-3xl border-2 border-pink-200 shadow-md">
+            <div class="washi-tape-pink -top-2 left-10"></div>
+            <div class="flex items-center gap-2 mb-2">
+              <img src="aseet no bg/camera-removebg-preview.png" alt="Camera" class="w-8">
+              <span class="font-handwriting font-bold text-pink-800 text-base">Snapped with Love 📸</span>
+            </div>
+            <div class="relative rounded-2xl overflow-hidden border-2 border-pink-300">
+              <img src="aseet/IMG_20241119_144233_1.jpg" alt="Momen Indah Berdua" class="w-full h-52 sm:h-64 object-cover cursor-pointer zoomable-photo">
+            </div>
+            <p class="text-center font-handwriting text-pink-700 font-bold text-xs mt-2">Setiap detik bersamamu selalu jadi kenangan terindah ✨</p>
+          </div>
+
+          <!-- Film Strip Photostrip (3 photos) -->
+          <div class="photostrip-container">
+            <div class="text-center font-handwriting text-pink-600 text-xs font-bold mb-2 tracking-wider">PHOTOSTRIP KENANGAN NIKEN</div>
+            <div class="grid grid-cols-3 gap-2">
+              <div class="overflow-hidden rounded">
+                <img src="aseet/IMG-20260823-WA0047.jpeg" alt="Kenangan Manis" class="w-full h-24 sm:h-28 object-cover cursor-pointer zoomable-photo hover:scale-105 transition-transform">
+              </div>
+              <div class="overflow-hidden rounded">
+                <img src="aseet/IMG-20260915-WA0041.jpg" alt="Senyuman Niken" class="w-full h-24 sm:h-28 object-cover cursor-pointer zoomable-photo hover:scale-105 transition-transform">
+              </div>
+              <div class="overflow-hidden rounded">
+                <img src="aseet/IMG_20260307_110739.jpg" alt="Foto Spesial" class="w-full h-24 sm:h-28 object-cover cursor-pointer zoomable-photo hover:scale-105 transition-transform">
+              </div>
+            </div>
+          </div>
+
+          <!-- Polaroid Grid (Additional photos) -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="polaroid-card rotate-[-2deg]">
+              <img src="aseet/IMG_20260307_110528.jpg" alt="Niken Cantik" class="w-full h-32 object-cover rounded cursor-pointer zoomable-photo">
+              <p class="text-center font-handwriting text-pink-700 text-xs mt-1.5 font-bold">Cantik Selalu 💕</p>
+            </div>
+            <div class="polaroid-card rotate-[2deg]">
+              <img src="aseet/IMG_20260514_155933.jpg" alt="Tawa Bahagia" class="w-full h-32 object-cover rounded cursor-pointer zoomable-photo">
+              <p class="text-center font-handwriting text-pink-700 text-xs mt-1.5 font-bold">Tawa Bahagiamu ✨</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MODULE 3: DEDICATED MUSIC PLAYER
+    =========================================== -->
+    <section id="screen-music" class="view-screen">
+      <!-- Navigation Header -->
+      <div class="flex items-center justify-between mb-4 max-w-4xl mx-auto">
+        <button data-goto="hub" class="inline-flex items-center gap-2 bg-white/95 hover:bg-white border-2 border-pink-400 text-pink-700 font-bold px-5 py-2 rounded-full shadow text-xs sm:text-sm active:scale-95 transition-all">
+          <span>←</span>
+          <span>BACK</span>
+        </button>
+        <div class="bg-pink-500 text-white font-bold text-xs sm:text-sm px-4 py-1.5 rounded-full shadow">
+          LISTEN TO THE MUSIC :> 🎵
+        </div>
+      </div>
+
+      <div class="bg-white/95 rounded-3xl p-6 sm:p-10 shadow-2xl border-4 border-pink-300 max-w-4xl mx-auto relative overflow-hidden">
+        <div class="washi-tape -top-3 left-10 rotate-[-4deg]"></div>
+        <div class="washi-tape -top-3 right-10 rotate-[3deg]"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          
+          <!-- Left: Spinning Vinyl Turntable Display -->
+          <div class="md:col-span-5 flex flex-col items-center">
+            <div class="relative w-52 h-52 sm:w-64 sm:h-64 flex items-center justify-center bg-pink-100 rounded-full border-4 border-dashed border-pink-300 shadow-inner p-2">
+              
+              <!-- Vinyl Record Graphic -->
+              <img id="main-vinyl" src="aseet no bg/piringanhitam-removebg-preview.png" alt="Vinyl Record" class="w-48 h-48 sm:w-56 sm:h-56 animate-spin-vinyl paused drop-shadow-xl cursor-pointer">
+              
+              <!-- Center Album Photo in Vinyl -->
+              <div class="absolute w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-white shadow-md pointer-events-none">
+                <img src="aseet/IMG_20260307_110739.jpg" alt="Center Label" class="w-full h-full object-cover">
+              </div>
+            </div>
+
+            <!-- Animated Audio Equalizer Bars -->
+            <div class="flex items-end gap-1.5 h-8 mt-5">
+              <span class="visualizer-bar paused"></span>
+              <span class="visualizer-bar paused"></span>
+              <span class="visualizer-bar paused"></span>
+              <span class="visualizer-bar paused"></span>
+              <span class="visualizer-bar paused"></span>
+              <span class="visualizer-bar paused"></span>
+            </div>
+            <span class="text-xs text-pink-600 font-semibold mt-1">Audio Visualizer</span>
+          </div>
+
+          <!-- Right: Player Controls & Track Info -->
+          <div class="md:col-span-7 flex flex-col">
+            
+            <div class="border-b border-pink-200 pb-3 mb-4">
+              <span class="inline-block bg-pink-100 text-pink-700 text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-1">
+                Lagu Pilihan Khusus Untukmu
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-serif-vintage font-black text-pink-700">
+                Sempurna
+              </h3>
+              <p class="text-sm font-semibold text-pink-800">
+                Andra and the Backbone
+              </p>
+              <p class="text-xs text-pink-600 italic mt-0.5">
+                "Karena bagiku, kamu adalah sosok yang begitu sempurna, Niken."
+              </p>
+            </div>
+
+            <!-- Lyrics Snippet Box -->
+            <div class="bg-pink-50/80 border border-pink-200 rounded-2xl p-3.5 mb-5 text-center shadow-inner">
+              <p class="font-handwriting text-base sm:text-lg text-pink-900 leading-snug">
+                "Janganlah kau pernah hancurkan sakit hatiku...<br>
+                Kau begitu sempurna, di mataku kau begitu indah..."
+              </p>
+            </div>
+
+            <!-- Seekable Timeline Progress Bar -->
+            <div class="space-y-1 mb-4">
+              <div id="music-progress" class="w-full h-2.5 bg-pink-100 rounded-full cursor-pointer overflow-hidden relative border border-pink-200">
+                <div id="progress-filled" class="h-full bg-gradient-to-r from-pink-400 to-rose-500 rounded-full w-0 transition-all duration-100"></div>
+              </div>
+              <div class="flex justify-between text-xs text-pink-600 font-semibold px-0.5">
+                <span id="time-current">0:00</span>
+                <span id="time-total">0:00</span>
+              </div>
+            </div>
+
+            <!-- Playback Controls -->
+            <div class="flex items-center justify-center gap-6 mb-4">
+              <button class="text-pink-400 hover:text-pink-600 transition-colors" title="Lagu sebelumnya" onclick="document.getElementById('bg-music').currentTime = 0;">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+              </button>
+
+              <button id="main-play-btn" class="w-14 h-14 rounded-full bg-gradient-to-tr from-pink-500 to-rose-400 hover:from-pink-600 hover:to-rose-500 flex items-center justify-center shadow-lg shadow-pink-300 hover:scale-105 active:scale-95 transition-all text-white">
+                <span id="main-play-icon">
+                  <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </button>
+
+              <button class="text-pink-400 hover:text-pink-600 transition-colors" title="Ulang lagu" onclick="document.getElementById('bg-music').currentTime = 0;">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+              </button>
+            </div>
+
+            <!-- Volume & Mute Controls -->
+            <div class="flex items-center justify-between bg-pink-50/60 rounded-xl px-4 py-2 border border-pink-200">
+              <div class="flex items-center gap-2">
+                <button id="mute-btn" class="text-base" title="Mute/Unmute">🔊</button>
+                <input id="volume-slider" type="range" min="0" max="1" step="0.05" value="0.8" class="w-24 sm:w-32 accent-pink-500 cursor-pointer">
+              </div>
+
+              <!-- Spotify-Style Audio Barcode Graphic -->
+              <div class="flex items-center gap-1 opacity-70">
+                <span class="text-[10px] font-bold text-pink-700 tracking-wider">SPOTIFY CODE:</span>
+                <div class="flex items-end gap-0.5 h-4">
+                  <span class="w-0.5 h-2 bg-pink-600"></span>
+                  <span class="w-0.5 h-4 bg-pink-600"></span>
+                  <span class="w-0.5 h-1.5 bg-pink-600"></span>
+                  <span class="w-0.5 h-3.5 bg-pink-600"></span>
+                  <span class="w-0.5 h-2 bg-pink-600"></span>
+                  <span class="w-0.5 h-4 bg-pink-600"></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       PERSISTENT FLOATING MINI MUSIC PLAYER WIDGET
+  =========================================== -->
+  <div id="floating-player" class="hidden fixed bottom-4 right-4 z-50 bg-white/95 backdrop-blur-md border-2 border-pink-300 rounded-full px-4 py-2 shadow-xl items-center gap-3 animate-bounce-subtle">
+    <!-- Spinning Mini Vinyl -->
+    <div class="w-8 h-8 rounded-full overflow-hidden border border-pink-400 flex-shrink-0">
+      <img id="mini-vinyl" src="aseet no bg/piringanhitam-removebg-preview.png" alt="Mini Vinyl" class="w-full h-full object-cover animate-spin-vinyl paused">
+    </div>
+
+    <div class="flex flex-col pr-1 cursor-pointer" onclick="document.querySelector('[data-dest=music]')?.click()">
+      <span class="text-[11px] font-bold text-pink-700 leading-tight">Sempurna</span>
+      <span class="text-[9px] text-pink-500">Andra & The Backbone</span>
+    </div>
+
+    <!-- Mini Play/Pause button -->
+    <button id="mini-play-btn" class="w-8 h-8 rounded-full bg-pink-100 hover:bg-pink-200 border border-pink-300 flex items-center justify-center text-pink-600 active:scale-90 transition-transform">
+      <span id="mini-play-icon">
+        <svg class="w-4 h-4 text-pink-600" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </span>
+    </button>
+  </div>
+
+  <!-- ==========================================
+       MODAL: COUPON CLAIM CONFIRMATION (WHATSAPP)
+  =========================================== -->
+  <div id="coupon-modal" class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm items-center justify-center p-4">
+    <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-sm w-full border-4 border-pink-300 shadow-2xl text-center relative overflow-hidden">
+      <div class="washi-tape-pink -top-2 left-1/2 -translate-x-1/2"></div>
+      <div class="text-4xl mb-2 mt-2">🎉</div>
+      <h3 class="text-xl font-serif-vintage font-bold text-pink-700">Kupon Berhasil Diklaim!</h3>
+      <p id="modal-coupon-title" class="font-bold text-pink-800 text-sm my-2 bg-pink-50 py-1 px-3 rounded-lg border border-pink-200"></p>
+      <p class="text-xs text-pink-600 mb-6">
+        Kirim pesan ke Wildan sekarang buat langsung nagih kupon ini yuk!
+      </p>
+
+      <div class="flex flex-col gap-2.5">
+        <a id="modal-wa-link" href="#" target="_blank" class="w-full bg-[#25D366] hover:bg-[#20ba59] text-white font-bold py-3 px-4 rounded-xl shadow flex items-center justify-center gap-2 text-sm active:scale-95 transition-all">
+          <span>Kirim ke WhatsApp 💬</span>
+        </a>
+        <button id="close-coupon-modal" class="w-full bg-pink-100 hover:bg-pink-200 text-pink-700 font-bold py-2.5 px-4 rounded-xl text-xs active:scale-95 transition-all">
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL: HIGH-RES PHOTO LIGHTBOX
+  =========================================== -->
+  <div id="lightbox-modal" class="hidden fixed inset-0 z-50 bg-black/75 backdrop-blur-sm items-center justify-center p-4">
+    <div class="relative bg-white rounded-2xl p-3 sm:p-5 max-w-lg w-full shadow-2xl border-4 border-pink-300">
+      <button id="close-lightbox" class="absolute -top-3 -right-3 w-9 h-9 bg-pink-500 hover:bg-pink-600 text-white rounded-full font-bold flex items-center justify-center shadow-lg active:scale-90 transition-transform">
+        ✕
+      </button>
+      <div class="rounded-xl overflow-hidden max-h-[75vh] flex items-center justify-center bg-pink-50">
+        <img id="lightbox-img" src="" alt="Full Photo" class="w-full h-auto max-h-[70vh] object-contain">
+      </div>
+      <p id="lightbox-caption" class="text-center font-handwriting text-pink-700 font-bold text-sm sm:text-base mt-3"></p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
